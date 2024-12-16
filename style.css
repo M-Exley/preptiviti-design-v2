@@ -1,0 +1,151 @@
+/* 
+orange = rgb(234, 99, 57);
+light blue = rgb(43, 158, 209);
+green = rgb(72, 176, 134);
+dark blue = rgb(38, 53, 90); */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* body {
+    height: 150vh;
+} */
+
+.header {   
+    font-family: Roboto, sans-serif; 
+    font-size: medium;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(38, 53, 90);
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    /* top: 0px; */
+    }
+
+.header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    
+}
+
+.header .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 7px;
+    padding-right: 50px;
+}
+
+svg {
+    fill: white;
+    color: #f7f4f4;
+    transform: translateY(2px);
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.headerstrip {
+    background-color: rgb(234, 99, 57);
+    height: 2px;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 500px;
+}
+
+.headerstrip {
+    grid-column: span 4;
+    top: 0px;
+    max-height: 3px;
+    background-color: rgb(72, 176, 134)
+
+}
+
+.container div {
+    height: 1000px;
+}
+
+.sidebar {
+    font-family: Roboto, sans-serif;
+    font-size: x-large;
+    font-weight: 500;
+    color: white;
+    /* background-color: rgb(234, 99, 57); */
+    max-width: 200px;
+    max-height: 500px;
+    grid-column: 1;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1 1fr;
+    grid-template-rows: repeat(12, 40px);
+}
+
+.sidebar-cont {
+    background-color: aliceblue;
+    border: .5px black dotted;
+    background-color: rgb(234, 99, 57);
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.sidebarexample {
+    padding-left: 13px;
+    font-size: small;
+}
+.content {
+    font-family: Roboto, sans-serif;
+    padding: 40px;
+    background-color: rgb(219, 219, 218);
+    grid-column: 2;
+    grid-row: 1 / 3;
+    height: 1000px;
+    margin: 25px 40px 0px 0px;
+}
+
+.levels {
+    padding: 15px;
+    display: none;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid black;
+    background-color: rgb(234, 99, 57);
+    font-size: larger;
+    gap: 40px
+    
+}
+
+svg:hover {
+    transform: rotate(-180deg);
+    transition: transform 0.5;
+
+
+}
+
+.task {
+    line-height: 2.5;
+}
